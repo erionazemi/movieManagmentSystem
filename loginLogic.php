@@ -27,7 +27,7 @@
 		else{
 
 			//If false, we will create a query to select id,emri,username,email,password,is_admin from users table based on each username
-			$sql = "SELECT id, emri, username, email, password, is_admin FROM users WHERE username=:username";
+			$sql = "SELECT id, name, username, email, password, is_admin FROM users WHERE username=:username";
 
 			//We use prepared statement as a feature used to execute the same sql statement repeatedly with high efficiency
 			$selectUser = $conn->prepare($sql);
